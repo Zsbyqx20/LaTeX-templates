@@ -1,5 +1,7 @@
 # LaTeX Templates
 
+![img]()
+
 ## Basic Info
 
 This is a repo of latex template(s) for my daily homework and lab report, and the template is right suitable for **Tsinghua University** students.
