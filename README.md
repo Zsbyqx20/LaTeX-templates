@@ -1,6 +1,6 @@
 # LaTeX Templates
 
-![img]()
+![Preview Image](./figures/preview.jpg)
 
 ## Basic Info
 
