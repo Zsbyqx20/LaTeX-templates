@@ -62,6 +62,7 @@
 \RequirePackage{multirow}
 \RequirePackage{bookmark}
 \RequirePackage{IEEEtrantools}
+\RequirePackage{float}
 
 
 % Global Settings
