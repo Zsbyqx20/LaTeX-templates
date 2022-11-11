@@ -166,7 +166,14 @@
 \newcommand{\vab}{\vspace{1em}}
 
 % set hyperref
-\hypersetup{hidelinks}
+\hypersetup{    
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Zachary Homework},
+    pdfpagemode=FullScreen,
+}
 %=======================================================%
 
 
