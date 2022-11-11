@@ -104,6 +104,7 @@
 %% Chinese font
 \newfontfamily\numchi{华文楷体}
 \setCJKmainfont[ItalicFont={华文楷体},BoldFont={等线 Bold}]{方正新书宋简体}
+\setCJKmonofont{华文楷体}
 %=======================================================%
 
 
@@ -166,25 +167,56 @@
 
 % set hyperref
 \hypersetup{hidelinks}
+%=======================================================%
+
+
+%=======================================================%
+% Code Style Definition
+% Global Settings
+\lstset{
+    basicstyle={\small\ttfamily},
+    belowskip=3mm,
+    breakatwhitespace=true,
+    breaklines=true,
+    classoffset=0,
+    columns=flexible,
+    escapechar=\$,
+    framexleftmargin=0.25em,
+    frameshape={{RYRYNYYYY}{yny}{yny}{RYRYNYYYY}},
+    numbers=none,
+    showstringspaces=false,
+    xleftmargin=1em
+}
+
 
 % SQL format
 \lstset{language=SQL,
-  basicstyle={\small\ttfamily},
-  belowskip=3mm,
-  breakatwhitespace=true,
-  breaklines=true,
-  classoffset=0,
-  columns=flexible,
   commentstyle=\color{dkgreen},
-  escapechar=\$,
-  framexleftmargin=0.25em,
-  frameshape={{RYRYNYYYY}{yny}{yny}{RYRYNYYYY}}, %To remove to vertical lines on left, set `frameshape={}{}{}{}`
-  keywordstyle=\color{blue},
-  numbers=none, %If you want line numbers, set `numbers=left`
+  keywordstyle=\color{matlab_b},
   numberstyle=\tiny\color{gray},
-  showstringspaces=false,
-  stringstyle=\color{mauve},
-  tabsize=3,
-  xleftmargin=1em
+  stringstyle=\color{mauve}
+}
+
+% Matlab format
+\definecolor{matlab_g}{RGB}{0,128,19}
+\definecolor{matlab_b}{RGB}{14,0,255}
+\definecolor{matlab_p}{RGB}{167,9,245}
+
+% For faster processing, load Matlab syntax for listings
+\lstloadlanguages{Matlab}
+
+\lstset{language=Matlab,                        % Use MATLAB
+        keywordstyle=[1]\color{matlab_b}\bfseries,        % MATLAB functions bold and matlab_b
+        keywordstyle=[2]\color{matlab_p},         % MATLAB function arguments matlab_p
+        keywordstyle=[3]\color{matlab_b}\underbar,  % User functions underlined and matlab_b
+                                                % Comments small dark green courier
+        commentstyle=\usefont{T1}{pcr}{m}{sl}\color{matlab_g}\small,
+        stringstyle=\color{matlab_p},             % Strings are matlab_p
+        morekeywords={xlim,ylim,var,alpha,factorial,poissrnd,normpdf,normcdf},
+        %%% Put MATLAB function parameters here
+        morekeywords=[2]{on, off, interp},
+        %%% Put user defined functions here
+        morekeywords=[3]{FindESS, homework_example},
+        morecomment=[l][\color{matlab_b}]{...}     % Line continuation (...) like matlab_b comment
 }
 %=======================================================%
