@@ -68,7 +68,7 @@
 % Global Settings
 \graphicspath{{./figures}}
 \setlength\parindent{0pt}
-\setlist[enumerate]{itemsep=0em,topsep=0.2em,parsep=0pt,partopsep=0.2em}
+\setlist[enumerate]{itemsep=0.2em,topsep=0.2em,parsep=0.2pt,partopsep=0.2em}
 \setlist[enumerate, 1]{label = {(\arabic*)}}
 \setlist[enumerate, 2]{label = {\roman*.}}
 \setlist[itemize]{itemsep=0em,topsep=0.2em,parsep=0pt,partopsep=0.2em}
