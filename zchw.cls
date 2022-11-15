@@ -100,7 +100,7 @@
 %% English font
 \setmainfont{TeX Gyre Pagella}
 \setmathfont{Asana Math}
-\setmonofont{JetBrains Mono}
+\setmonofont{Cascadia Code}
 %% Chinese font
 \newfontfamily\numchi{华文楷体}
 \setCJKmainfont[ItalicFont={华文楷体},BoldFont={等线 Bold}]{方正新书宋简体}
@@ -217,7 +217,7 @@
         keywordstyle=[2]\color{matlab_p},         % MATLAB function arguments matlab_p
         keywordstyle=[3]\color{matlab_b}\underbar,  % User functions underlined and matlab_b
                                                 % Comments small dark green courier
-        commentstyle=\usefont{T1}{pcr}{m}{sl}\color{matlab_g}\small,
+        commentstyle=\color{matlab_g}\small,
         stringstyle=\color{matlab_p},             % Strings are matlab_p
         morekeywords={xlim,ylim,var,alpha,factorial,poissrnd,normpdf,normcdf},
         %%% Put MATLAB function parameters here
