@@ -100,7 +100,7 @@
 %% English font
 \setmainfont{TeX Gyre Pagella}
 \setmathfont{Asana Math}
-\setmonofont{Cascadia Code}
+\setmonofont{CodeNewRoman NF}
 %% Chinese font
 \newfontfamily\numchi{华文楷体}
 \setCJKmainfont[ItalicFont={华文楷体},BoldFont={等线 Bold}]{方正新书宋简体}
